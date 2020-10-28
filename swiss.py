@@ -89,7 +89,7 @@ def weight(highest_points, p1, p2):
 # importance and closeness are values in the range 0..highest_points
 def quality(importance, closeness):
     # We add one to these values to avoid sometimes multiplying by zero and losing information.
-    return (importance + 1 ** 2) * (closeness + 1 ** 2)
+    return (importance + 1) ** 2 * (closeness + 1) ** 2
 
 if __name__ == '__main__':
     example()
